@@ -75,3 +75,50 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* || Web fonts */
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/fonts/manrope/static/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+/* || Custom properties */
+:root {
+  --color-dark-purple: hsl(273 85% 13%);
+  --color-eucalyptus: hsl(150 100% 63%);
+  --color-davys-grey: hsl(271 12% 34%);
+  --color-ghost-white: hsl(276 100% 99%);
+  --color-white: hsl(0 0% 100%);
+  --heading-font: "Fraunces", serif;
+  --body-font: "Manrope", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.75rem;
+  --font-size-4xl: 2rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.125rem;
+  --font-size-7xl: 3.5rem;
+  --font-size-8xl: 3.75rem;
+  --font-size-9xl: 5rem;
+  --line-height-3xs: 1;
+  --line-height-2xs: 1.14;
+  --line-height-xs: 1.17;
+  --line-height-s: 1.25;
+  --line-height-m: 1.29;
+  --line-height-base: 1.5;
+  --line-height-lg: 1.67;
+  --line-height-xl: 1.75;
+  --line-height-2xl: 1.78;
+  --line-height-3xl: 1.8;
+  --line-height-4xl: 2;
+}
