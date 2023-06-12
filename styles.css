@@ -122,3 +122,21 @@ select {
   --line-height-3xl: 1.8;
   --line-height-4xl: 2;
 }
+
+/* || Global styles */
+body {
+  padding: 2rem 1rem 4rem;
+  font-family: var(--body-font);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-xl);
+  text-align: center;
+  color: var(--color-davys-grey);
+  background-color: var(--color-white);
+}
+
+/* || Page wrapper styles */
+.page {
+  max-width: 69.625rem;
+  margin-inline: auto;
+}
