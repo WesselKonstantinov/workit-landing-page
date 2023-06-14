@@ -135,6 +135,18 @@ body {
   background-color: var(--color-white);
 }
 
+body::before {
+  content: "";
+  width: 18.625rem;
+  height: 11.125rem;
+  position: absolute;
+  top: 24.3125rem;
+  transform: translateX(-50%);
+  background-image: url("./assets/images/image-hero.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /* || Page wrapper styles */
 .page {
   max-width: 69.625rem;
@@ -190,12 +202,6 @@ body {
   border-bottom: 3px solid var(--color-eucalyptus);
 }
 
-.hero__image {
-  width: 20rem;
-  height: 11.5rem;
-  margin-inline: auto;
-}
-
 .cta {
   display: inline-block;
   text-decoration: none;
@@ -206,9 +212,15 @@ body {
 }
 
 .cta--contained {
-  padding: 0.75rem 1.5rem;
+  padding: 0.59375rem 1.5rem;
   background-color: var(--color-eucalyptus);
+  border: 2px solid var(--color-eucalyptus);
   color: var(--color-dark-purple);
+}
+
+.cta--contained:hover {
+  background-color: transparent;
+  color: var(--color-eucalyptus);
 }
 
 .cta--text {
