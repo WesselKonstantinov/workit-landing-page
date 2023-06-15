@@ -174,6 +174,10 @@ h4 {
   border-bottom-right-radius: 53% 4%;
 }
 
+.page > * + * {
+  margin-top: var(--page-flow-space, 4rem);
+}
+
 /* || Header and logo styles */
 .header {
   display: flex;
@@ -196,8 +200,8 @@ h4 {
 }
 
 /* || Hero, CTA and card styles */
-.hero {
-  margin-top: 4rem;
+.hero > * + * {
+  margin-top: var(--hero-flow-space, 2.5rem);
 }
 
 .hero__title {
@@ -211,10 +215,10 @@ h4 {
 }
 
 .hero__features-list {
+  --hero-flow-space: 19.5rem;
   list-style-type: none;
   counter-reset: section;
   padding-left: 0;
-  margin-top: 19.5rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -251,6 +255,10 @@ h4 {
   margin-top: 1rem;
 }
 
+.hero__profile {
+  --hero-flow-space: 10.75rem;
+}
+
 .cta {
   display: inline-block;
   text-decoration: none;
@@ -262,7 +270,6 @@ h4 {
 
 .cta--contained {
   padding: 0.59375rem 1.5rem;
-  margin-top: 2.5rem;
   background-color: var(--color-eucalyptus);
   border: 2px solid var(--color-eucalyptus);
   color: var(--color-dark-purple);
@@ -288,18 +295,22 @@ h4 {
   color: var(--color-white);
 }
 
+.card > * + * {
+  margin-top: var(--card-flow-space, 1.5rem);
+}
+
 .card__title {
   font-size: var(--font-size-4xl);
   line-height: var(--line-height-base);
 }
 
 .card__description {
-  margin-top: 1rem;
+  --card-flow-space: 1rem;
 }
 
 /* || Footer styles */
 .footer {
-  margin-top: 4.625rem;
+  --page-flow-space: 4.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
