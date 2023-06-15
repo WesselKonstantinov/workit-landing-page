@@ -147,6 +147,14 @@ body::before {
   background-repeat: no-repeat;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+  font-weight: var(--font-weight-semibold);
+}
+
 /* || Page wrapper styles */
 .page {
   max-width: 69.625rem;
@@ -187,14 +195,12 @@ body::before {
   height: 1.625rem;
 }
 
-/* || Hero and CTA styles */
+/* || Hero, CTA and card styles */
 .hero {
   margin-top: 4rem;
 }
 
 .hero__title {
-  font-family: var(--heading-font);
-  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-6xl);
   line-height: var(--line-height-3xs);
   color: var(--color-white);
@@ -236,8 +242,6 @@ body::before {
 }
 
 .hero__feature-title {
-  font-family: var(--heading-font);
-  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-3xl);
   line-height: var(--line-height-m);
   color: var(--color-dark-purple);
@@ -276,6 +280,21 @@ body::before {
 
 .cta--text:hover {
   color: var(--color-eucalyptus);
+}
+
+.card {
+  padding: 2rem 1.9375rem;
+  background-color: var(--color-dark-purple);
+  color: var(--color-white);
+}
+
+.card__title {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-base);
+}
+
+.card__description {
+  margin-top: 1rem;
 }
 
 /* || Footer styles */
