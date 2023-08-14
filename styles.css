@@ -125,21 +125,12 @@ select {
 
 /* || Global styles */
 body {
-  padding: 2rem 1rem 4rem;
   font-family: var(--body-font);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-xl);
   text-align: center;
   color: var(--color-davys-grey);
-  background-image: radial-gradient(
-    circle at top,
-    var(--color-dark-purple) 20%,
-    var(--color-ghost-white) 20%,
-    var(--color-ghost-white) 60.8%,
-    var(--color-white) 60.8%
-  );
-  background-repeat: no-repeat;
 }
 
 h1,
@@ -150,30 +141,26 @@ h4 {
   font-weight: var(--font-weight-semibold);
 }
 
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* || Page wrapper styles */
 .page {
-  max-width: 69.625rem;
+  max-width: 90rem;
   margin-inline: auto;
 }
 
-.page::before {
-  content: "";
-  width: 18.625rem;
-  height: 11.125rem;
-  position: absolute;
-  top: 24.3125rem;
-  transform: translateX(-50%);
-  background-image: url("./assets/images/image-hero.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.page > * + * {
-  margin-top: var(--page-flow-space, 4rem);
-}
-
 /* || Header and logo styles */
-.header {
+/* .header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -191,10 +178,10 @@ h4 {
 .logo {
   width: 6.0625rem;
   height: 1.625rem;
-}
+} */
 
 /* || Hero, CTA and card styles */
-.hero > * + * {
+/* .hero > * + * {
   margin-top: var(--hero-flow-space, 2.5rem);
 }
 
@@ -313,10 +300,10 @@ h4 {
 
 .card__description {
   --card-flow-space: 1rem;
-}
+} */
 
 /* || Footer styles */
-.footer {
+/* .footer {
   --page-flow-space: 4.625rem;
   display: flex;
   flex-direction: column;
@@ -340,4 +327,4 @@ h4 {
 
 .footer__social-link:hover .footer__social-icon-path {
   fill: var(--color-dark-purple);
-}
+} */
