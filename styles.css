@@ -84,7 +84,7 @@ select {
 
 @font-face {
   font-family: "Fraunces";
-  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+  src: url("./assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf");
 }
 
 /* || Custom properties */
@@ -153,10 +153,6 @@ h4 {
   border-width: 0;
 }
 
-.page > * + * {
-  margin-top: var(--flow-space, 1rem);
-}
-
 /* || Page wrapper styles */
 .page {
   max-width: 90rem;
@@ -165,7 +161,7 @@ h4 {
 
 /* || Header, logo and CTA styles */
 .header {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem;
   background-color: var(--color-dark-purple);
 }
 
@@ -221,8 +217,33 @@ h4 {
 }
 
 /* || Hero and card styles */
-/* .hero > * + * {
-  margin-top: var(--hero-flow-space, 2.5rem);
+.hero {
+  position: relative;
+  padding-inline: 1rem;
+  background-color: var(--color-dark-purple);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  z-index: -1;
+  width: 100%;
+  height: 2rem;
+  background-image: url("./assets/images/Rectangle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+}
+
+.hero__inner {
+  max-width: 69.375rem;
+  margin-inline: auto;
+}
+
+.hero__inner > * + * {
+  margin-top: var(--flow-space, 2.5rem);
 }
 
 .hero__title {
@@ -233,6 +254,18 @@ h4 {
 
 .hero__title-highlight {
   border-bottom: 3px solid var(--color-eucalyptus);
+}
+
+.hero__image {
+  width: 18.64375rem;
+  height: 11.1375rem;
+  margin-top: -3.4375rem;
+  margin-inline: auto;
+  transform: translateY(7.5rem);
+}
+
+/* .hero > * + * {
+  margin-top: var(--hero-flow-space, 2.5rem);
 }
 
 .hero__features-list {
@@ -291,9 +324,9 @@ h4 {
   top: -14.25rem;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
-.card {
+/* .card {
   padding: 2rem 1.9375rem;
   background-color: var(--color-dark-purple);
   color: var(--color-white);
