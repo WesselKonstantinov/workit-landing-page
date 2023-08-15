@@ -153,21 +153,31 @@ h4 {
   border-width: 0;
 }
 
+.page > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
 /* || Page wrapper styles */
 .page {
   max-width: 90rem;
   margin-inline: auto;
 }
 
-/* || Header and logo styles */
-/* .header {
+/* || Header, logo and CTA styles */
+.header {
+  padding: 2rem 1rem;
+  background-color: var(--color-dark-purple);
+}
+
+.header__inner {
+  max-width: 69.375rem;
+  margin-inline: auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
 }
 
 .link {
-  display: inline-block;
   transition: transform 0.2s ease-in-out 0s;
 }
 
@@ -176,11 +186,41 @@ h4 {
 }
 
 .logo {
-  width: 6.0625rem;
-  height: 1.625rem;
-} */
+  width: 5.9875rem;
+  height: 1.5375rem;
+}
 
-/* || Hero, CTA and card styles */
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  line-height: var(--line-height-4xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.01em;
+  transition: all 0.2s ease-out 0s;
+}
+
+.cta--contained {
+  padding: 0.59375rem 1.5rem;
+  background-color: var(--color-eucalyptus);
+  border: 2px solid var(--color-eucalyptus);
+  color: var(--color-dark-purple);
+}
+
+.cta--contained:hover {
+  background-color: transparent;
+  color: var(--color-eucalyptus);
+}
+
+.cta--text {
+  color: var(--color-white);
+  border-bottom: 3px solid var(--color-eucalyptus);
+}
+
+.cta--text:hover {
+  color: var(--color-eucalyptus);
+}
+
+/* || Hero and card styles */
 /* .hero > * + * {
   margin-top: var(--hero-flow-space, 2.5rem);
 }
@@ -251,36 +291,6 @@ h4 {
   top: -14.25rem;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.cta {
-  display: inline-block;
-  text-decoration: none;
-  line-height: var(--line-height-4xl);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: -0.01em;
-  transition: all 0.2s ease-out 0s;
-}
-
-.cta--contained {
-  padding: 0.59375rem 1.5rem;
-  background-color: var(--color-eucalyptus);
-  border: 2px solid var(--color-eucalyptus);
-  color: var(--color-dark-purple);
-}
-
-.cta--contained:hover {
-  background-color: transparent;
-  color: var(--color-eucalyptus);
-}
-
-.cta--text {
-  color: var(--color-white);
-  border-bottom: 3px solid var(--color-eucalyptus);
-}
-
-.cta--text:hover {
-  color: var(--color-eucalyptus);
 }
 
 .card {
