@@ -436,6 +436,7 @@ h4 {
     width: 21.3125rem;
     height: 19.8125rem;
     background-image: url("./assets/images/bg-pattern-1.svg");
+    background-size: cover;
   }
 
   .hero__inner::after {
@@ -446,6 +447,7 @@ h4 {
     width: 10.875rem;
     height: 11.3125rem;
     background-image: url("./assets/images/bg-pattern-2.svg");
+    background-size: cover;
   }
 
   .hero__title {
@@ -489,9 +491,51 @@ h4 {
 
   .profile {
     padding-inline: 2.5rem;
+    margin-top: 10rem;
+  }
+
+  .profile__inner {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 2.6rem);
+  }
+
+  .profile__image {
+    justify-self: flex-start;
+    grid-column: 1 / 7;
+  }
+
+  .card {
+    position: relative;
+    padding: 3rem 3.5rem 3.5rem;
+    margin-top: -1rem;
+    grid-column: 4 / 13;
+    grid-row: 5 / 14;
+    text-align: left;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    bottom: -6.6rem;
+    right: 0.7rem;
+    width: 13.8125rem;
+    height: 13.25rem;
+    background-image: url("./assets/images/bg-pattern-3.svg");
+    background-size: cover;
+  }
+
+  .card__title {
+    font-size: var(--font-size-5xl);
+    line-height: var(--line-height-xs);
+  }
+
+  .card__description {
+    --flow-space: 1.5rem;
   }
 
   .footer {
     padding-inline: 2.5rem;
+    padding-bottom: 7.5625rem;
+    margin-top: 1rem;
   }
 }
